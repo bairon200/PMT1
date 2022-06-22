@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMT1.MainPage"
+             NavigationPage.HasBackButton="False">
+    
+    <StackLayout BackgroundColor="#ECEAE4">
+        <Label Text="OPERACIONES" 
+               HorizontalOptions="Center"
+               FontSize="30"
+               FontAttributes="Bold"
+               Margin="0,20,0,0"/>
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="20,10,20,5"
+               CornerRadius="20"
+               HasShadow="False"
+               BackgroundColor="#1C1C1E">
+            <StackLayout VerticalOptions="Center"
+                         Spacing="10">
+                <Label Text="Tarea #1" 
+                       FontSize="40"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       Margin="0,-40,0,20"/>
+                <Frame VerticalOptions="Center"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       HasShadow="False">
+                    <Entry Keyboard="Numeric"
+                           FontSize="Large"
+                           Placeholder="Ingrese Valor #1"
+                           TextColor="#1C1C1E"
+                           x:Name="txtnum1" />
+                </Frame>
+                <Frame VerticalOptions="Center"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       HasShadow="False"
+                       Margin="0,0,0,30">
+                    <Entry Keyboard="Numeric"
+                           FontSize="Large"
+                           Placeholder="Ingrese Valor #2"
+                           TextColor="#1C1C1E"
+                           x:Name="txtnum2" />
+                </Frame>
+               
+                <Button Text="Sumar"
+                        CornerRadius="10"
+                        BackgroundColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        x:Name="sumar"
+                        Clicked="sumar_Clicked" />
+                <Button Text="Restar"
+                        CornerRadius="10"
+                        BackgroundColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        x:Name="Restar"
+                        Clicked="Restar_Clicked" />
+                <Button Text="Dividir"
+                        CornerRadius="10"
+                        BackgroundColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        x:Name="Dividir"
+                        Clicked="Dividir_Clicked" />
+                <Button Text="Multiplicar"
+                        CornerRadius="10"
+                        BackgroundColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        x:Name="Multiplicar"
+                        Clicked="Multiplicar_Clicked" />
+                <Label Text="@Bairon Vallecillo"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#3D3D3D" />
+            </StackLayout>
+           
+        </Frame>
+       
+    </StackLayout>
+</ContentPage>

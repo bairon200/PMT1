@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMT1.Page2"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout BackgroundColor="#1C1C1E">
+        
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="40,100"
+               CornerRadius="20"
+               HasShadow="False"
+               BackgroundColor="#ECEAE4">
+           
+            <StackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         >
+                <Image Source="https://i.ibb.co/5L087PZ/calculadora.png " />
+                <Label Text="Resultado: "
+                       TextColor="#1C1C1E"
+                       FontSize="35" />
+                <Label Text="{Binding resultado}"
+                       TextColor="#1C1C1E"
+                       FontSize="35" 
+                       HorizontalTextAlignment="Center"/>
+                <Button Text="Volver"
+                        FontSize="Large"
+                        CornerRadius="10"
+                        FontAttributes="Bold"
+                        Margin="20"
+                        x:Name="volver"
+                        Clicked="volver_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
